@@ -1,0 +1,90 @@
+/*              */
+/* global styles*/
+/*              */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*         */
+/* nav bar */
+/*         */
+
+.nav li {
+    display: flex;
+    float: right; 
+    position: relative;
+    margin: 20px;
+    border: bottom;
+    }
+    
+.nav li a {
+    text-decoration: none;
+    color: #fefae0;
+    font-size: 20px;
+    }
+
+nav {
+    background-color: #553555;
+    border-bottom: solid 2px #fefae0;
+    overflow: auto;
+    }
+
+/*           */
+/* home page */
+/*           */
+
+
+
+.homecont {   
+        position: relative;
+        min-height: 92vh;
+        background-image: url(reelbg.png);
+        background-size: cover;
+        -webkit-background-size: cover; /*resizes background to window size for chromium based broswers */
+        -moz-backround-size: cover; /*resizes background to window size on firefox*/
+        -ms-background-size: cover; /*resizes background to window size on edge*/
+        overflow: auto;
+
+        
+}
+
+.homecont div {
+    color: #fefaee;
+    min-width: 40vw;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.homecont div:nth-child(1) { /*p */
+    font-size: 20px;
+}
+
+.homecont div:nth-child(2) {
+    /* order: 0;
+    flex: 0 1 auto; */
+    text-align: center;
+    font-size: 40px;
+}
+
+/*                     */
+/* home media quieries */
+/*                     */
+
+/* @media screen {
+    .homecont
+} */
+
+
+/*                     */
+/* about               */
+/*                     */
+.aboutcont1 {
+    position: relative;
+}
