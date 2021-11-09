@@ -21,13 +21,18 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+/* GENERAL NAV STYLES */
+
+a:hover, i:hover {
     color: #FDB927;
+    transition: .3s;
+    transition-timing-function: ease-in;
 }
 
 .navlogo a:hover {
     text-decoration: none;
 }
+
 
 .navmenu li {
     font-size: 16px;
@@ -37,6 +42,7 @@ a:hover {
 
 .navlogo a {
     font-size: 20px;
+    letter-spacing: .15em;
 }
 
 ul {
@@ -148,4 +154,38 @@ ul {
     flex: 0 1 auto; */
     text-align: center;
     font-size: 40px;
+}
+
+/*            */
+/* ABOUT PAGE */
+/*            */
+
+.aboutcont {
+    background-image: url(reelbg.png);
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+/*               */
+/* BOOKING PAGE  */
+/*               */
+
+.contactcont {
+    position: relative;
+    min-height: 92vh;
+    background-image: url(reelbg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    /*resizes background to window size for chromium based broswers */
+    -moz-backround-size: cover;
+    /*resizes background to window size on firefox*/
+    -ms-background-size: cover;
+    /*resizes background to window size on edge*/
+    overflow: auto;
+}
+
+.contact  {
+
 }

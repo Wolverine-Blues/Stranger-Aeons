@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT</title>
+  <!-- CSS SHEET -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FONTS -->
+  <script src="https://kit.fontawesome.com/1eb3cc00d1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+  <head>
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    
-    <form class="form">
-        <fieldset>
-        
-        <!-- Form Name -->
-        <legend>CONTACT</legend>
-        
-        <!-- Text area -->
-        <div class="formitem">
-          <label class="formlabel" for="areaid"></label>
-          <div class="col-md-4">                     
-            <textarea class="areaclass" id="areaid" name="textarea"></textarea>
-          </div>
-        </div>
-        
-        <!-- Text input-->
-        <div class="formitem">
-          <label class="formlabel" for="textinput">Email Address</label>  
-          <div class="">
-          <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-
-        <!-- Button -->
-        <div class="formitem">
-            <label class="formlabel" for="submitbtn"></label>
-            <div class="col-md-4">
-              <button id="submitbtn" name="submitbtn" class="btn btn-primary">Submit</button>
-            </div>
-          </div>        
-            
-          </div>
-        </div>
-        
-        </fieldset>
-        </form>
-        
+      <nav>
+        <ul class="navmenu">
+            <li class="navlogo">
+                <a href="main.html">STRANGER AEONS</a>
+            </li>
+            <li class="navitem">
+                <a href="main.html">HOME</a>
+            </li>
+            <li class="navitem">
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li class="navitem">
+                <a href="booking.html">BOOKING</a>
+            </li>
+            <li class="navicon" onclick="navToggle()">
+                <i class="fas fa-bars"></i> 
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+  
+    <section>
+      <div class="contactcont">
+        <div class="contact"></div>
+          <div class="contactleft"></div>
+          <div class="contactright"></div>
+              <H2>Contact</H2>
+              <input type="text" class="contactfield" placeholder="Band Name">
+              <input type="email" class="contactfield" placeholder="Your Email">
+              <textarea class="contactfield" placeholder="Ask About Quotes and Availability"></textarea>
+              <button class="contactbutton">SUBMIT</button>
+      </div>
+    </section>    
 </body>
+
 </html>
