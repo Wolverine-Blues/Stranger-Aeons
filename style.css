@@ -1,54 +1,130 @@
-/*              */
-/* global styles*/
-/*              */
-body {
+/* GLOBAL STYLES */
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
-/*         */
-/* nav bar */
-/*         */
-
-.nav li {
-    display: flex;
-    float: right; 
-    position: relative;
-    margin: 20px;
-    border: bottom;
-    }
-    
-.nav li a {
-    text-decoration: none;
-    color: #fefae0;
-    font-size: 20px;
-    }
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 nav {
-    background-color: #553555;
-    border-bottom: solid 2px #fefae0;
-    overflow: auto;
+    background: #553555;
+    border-bottom: 1px solid #fefaee;
+    padding: 10px 20px;
+}
+
+a {
+    color: #fefaee;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FDB927;
+}
+
+.navlogo a:hover {
+    text-decoration: none;
+}
+
+.navmenu li {
+    font-size: 16px;
+    padding: 20px 10px;
+    white-space: nowrap;
+}
+
+.navlogo a {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* MOBILE FIRST MENU */
+
+.navmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navitem {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+.navitem.show {
+    display: block;
+}
+
+
+/* NAV TOGGLE */
+
+.navicon {
+    cursor: pointer;
+    color: #fefaee;
+}
+
+
+/* TABLET NAVBAR */
+
+@media all and (min-width: 468px) {
+    .navmenu {
+        justify-content: center;
     }
+    .navlogo {
+        flex: 1;
+    }
+    .navicon {
+        order: 2;
+    }
+}
 
-/*           */
-/* home page */
-/*           */
 
+/* PC NAVBAR */
 
+@media all and (min-width: 768px) {
+    .navitem {
+        display: block;
+        width: auto;
+    }
+    .navicon {
+        display: none;
+    }
+    .navlogo {
+        order: 0;
+    }
+    .navitem {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .navmenu li {
+        padding: 15px 10px;
+    }
+}
 
-.homecont {   
-        position: relative;
-        min-height: 92vh;
-        background-image: url(reelbg.png);
-        background-size: cover;
-        -webkit-background-size: cover; /*resizes background to window size for chromium based broswers */
-        -moz-backround-size: cover; /*resizes background to window size on firefox*/
-        -ms-background-size: cover; /*resizes background to window size on edge*/
-        overflow: auto;
+/* HOME PAGE */
 
-        
+.homecont {
+    position: relative;
+    min-height: 92vh;
+    background-image: url(reelbg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    /*resizes background to window size for chromium based broswers */
+    -moz-backround-size: cover;
+    /*resizes background to window size on firefox*/
+    -ms-background-size: cover;
+    /*resizes background to window size on edge*/
+    overflow: auto;
 }
 
 .homecont div {
@@ -56,13 +132,14 @@ nav {
     min-width: 40vw;
     min-height: 25vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.homecont div:nth-child(1) { /*p */
+.homecont div:nth-child(1) {
+    /*p */
     font-size: 20px;
 }
 
@@ -71,20 +148,4 @@ nav {
     flex: 0 1 auto; */
     text-align: center;
     font-size: 40px;
-}
-
-/*                     */
-/* home media quieries */
-/*                     */
-
-/* @media screen {
-    .homecont
-} */
-
-
-/*                     */
-/* about               */
-/*                     */
-.aboutcont1 {
-    position: relative;
 }
