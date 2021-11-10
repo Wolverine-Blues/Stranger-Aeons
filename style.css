@@ -23,10 +23,26 @@ a {
 
 /* GENERAL NAV STYLES */
 
-a:hover, i:hover {
+
+/* HOVER OFF EFFECT */
+a,i {
+    color: #fefaee;
+    transition: ease-in .6s;
+    font-size: 18px;
+    
+}
+
+/* HAMBURGER ICON  */
+a:hover {
     color: #FDB927;
-    transition: .3s;
-    transition-timing-function: ease-in;
+    letter-spacing: .6em;
+    transition: ease-in .5s;
+    
+}
+
+i:hover {
+    color: #FDB927;
+    transition: ease-in .5s;
 }
 
 .navlogo a:hover {
@@ -41,8 +57,8 @@ a:hover, i:hover {
 }
 
 .navlogo a {
-    font-size: 20px;
-    letter-spacing: .15em;
+    font-size: 22px;
+    letter-spacing: .2em;
 }
 
 ul {
@@ -109,9 +125,9 @@ ul {
     .navitem {
         order: 1;
     }
-    .button {
+    /* .button {
         order: 2;
-    }
+    } */
     .navmenu li {
         padding: 15px 10px;
     }
@@ -123,6 +139,7 @@ ul {
     position: relative;
     min-height: 92vh;
     background-image: url(reelbg.png);
+    background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
     /*resizes background to window size for chromium based broswers */
@@ -173,19 +190,35 @@ ul {
 /*               */
 
 .contactcont {
-    position: relative;
-    min-height: 92vh;
-    background-image: url(reelbg.png);
-    background-size: cover;
-    -webkit-background-size: cover;
-    /*resizes background to window size for chromium based broswers */
-    -moz-backround-size: cover;
-    /*resizes background to window size on firefox*/
-    -ms-background-size: cover;
-    /*resizes background to window size on edge*/
-    overflow: auto;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
 }
 
 .contact  {
+    position: absolute;
+    height: 87.7vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.bg {
+    background-image: url(reelbg.png);
+    z-index: -1;
+}
+.contactform{
+    width: 100vw;
+    color: #fefaee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.contactfield{
+    font-size: 20px;
+    margin: 5px;
 }
