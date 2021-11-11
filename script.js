@@ -1,4 +1,6 @@
+/////               //////
 ///// Navbar toggle//////
+/////              /////
 $(function() {
 $(".navicon").on("click", function() {
     if ($(".navitem").hasClass("show")) {
@@ -9,29 +11,25 @@ $(".navicon").on("click", function() {
 });
 });
 
-function formFunct()
-    {
-    if(document.getElementById("bandname").value.length == 0)
-        {alert("Band Name is invalid")}
-    if(document.getElementById("email").value.length == 0)
-        {alert("Email is invalid")}
-    
-    else{
-    {var bandData= document.getElementById("bandname").value;} //let doesn't work to declare variable here for some reason
-    {var emailData= document.getElementById("email").value;}
-    {var fieldData= document.getElementById("field").value;}
+/////                       /////
+///// Form email validation /////
+/////                       /////
+function formValidate()
+{
+{var bandData= document.getElementById("bandname").value}; 
+{var emailData= document.getElementById("email").value};
+{var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;}
 
-    alert("Thanks for your interest, " +bandData +". I'll be in touch with you soon at " +emailData)
-    }
+if(emailData.match(mailFormat))
+{
+alert("Thanks for your interest, " +bandData +". I'll be in touch with you soon at " +emailData);
+return true;
 }
 
-// function formFunct()
-// {
-//     {var bandData= document.getElementById("bandname").value;} //let doesn't work to declare variable here for some reason
-//     {var emailData= document.getElementById("email").value;}
-//     {var fieldData= document.getElementById("field").value;}
-
-//     alert("Thanks for your interest, " +bandData +". I'll be in touch with you soon at " +emailData)
-// }
-
+else
+{
+alert("The email address was invalid");
+return false;
+}
+}
 
