@@ -84,7 +84,7 @@ ul {
 }
 
 .navitem.show {
-    display: block;
+    display: block;   
 }
 
 
@@ -180,12 +180,34 @@ ul {
 /*            */
 
 .aboutcont {
-    background-image: url(reelbg.png);
-    min-height: 90vh;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.about {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg2 {
+    background-image: url(reelbg.png);
+    z-index: -1;
+}
+
+.accordiancont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
- }
+    align-items: center;
+    text-align: center;
+}
 
 /*               */
 /* BOOKING PAGE  */
@@ -207,12 +229,12 @@ ul {
     background-repeat: no-repeat;
 }
 
-.bg {
+.bg3 {
     background-image: url(reelbg.png);
     z-index: -1;
 }
 .contactform{
-    width: 100vw;
+    width: 100%;
     color: #fefaee;
     display: flex;
     flex-direction: column;
