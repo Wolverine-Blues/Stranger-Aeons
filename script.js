@@ -1,7 +1,7 @@
 /////               //////
 ///// Navbar toggle//////
 /////              /////
-  $(function() {
+$(function() {
 
 $(".navicon").on("click", function() {
     if ($(".navitem").hasClass("show")) 
