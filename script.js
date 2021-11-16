@@ -8,20 +8,21 @@ $(".navicon").on("click", function() {
     {
         $(".navitem").removeClass("show");
     } 
+    
     else 
     {
         $(".navitem").addClass("show");
     }
 });
-});     
+}); 
 
 
 //commented code below kept breaking in browser but rewriting it in
 //jquery above fixed it. keeping this just in case I can get it to work with
 //vanilla js
 
-// let navItem = document.getElementsById("navitem");
-// let navIcon = document.getElementsById("navicon");
+// let navItem = document.getElementsByClassName("navitem") [0]
+// let navIcon = document.getElementsByClassName("navicon") [0]
 // navIcon.addEventListener("click", () => {
 //     if (navItem.classList.contains("show")){
 //         navItem.classList.remove("show");
@@ -32,6 +33,25 @@ $(".navicon").on("click", function() {
 // }
 // )
 
+/////            /////
+///// ABOUT PAGE /////
+/////            /////
+var quest = document.getElementsByClassName("quest");
+
+for (i = 0; i < quest.length; i++) {
+    quest[i].addEventListener("click", function() {
+
+    var ans = this.nextElementSibling;
+    if (ans.style.display === "block") 
+    {
+      ans.style.display = "none";
+    } 
+    
+    else {
+      ans.style.display = "block";
+    }
+  });
+}
 
 /////                       /////
 ///// Form email validation /////
