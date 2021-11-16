@@ -211,10 +211,10 @@ ul {
 }
 
 .quest {
-    background-color: #f;
+    background-color: #fefaee;
     color: black;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
     cursor: pointer;
     transition: .5s ease-in;
@@ -226,11 +226,12 @@ ul {
 }
 .ans {
     max-width: 60vw;
-    background-color: #FDB927;
+    background-color: #fefaee;
     border-radius: 15px;
     padding: 4px 10px;
     display: none;
 }
+
 
 /*               */
 /* BOOKING PAGE  */

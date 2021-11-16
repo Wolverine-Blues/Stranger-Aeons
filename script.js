@@ -42,13 +42,13 @@ for (i = 0; i < quest.length; i++) {
     quest[i].addEventListener("click", function() {
 
     var ans = this.nextElementSibling;
-    if (ans.style.display === "block") 
+    if (ans.style.display ==="block") 
     {
-      ans.style.display = "none";
+      ans.style.display ="none";
     } 
     
     else {
-      ans.style.display = "block";
+      ans.style.display ="block";
     }
   });
 }
