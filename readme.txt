@@ -1,58 +1,27 @@
-This project is a website created for my music studio
-Stranger Aeons. It utilizes HTML, CSS, and Javascript.
-It consists of an index page, an about page, and a contact
-form. It utilizes html, css, and javascript in order to create 
-a responsive and interactive website.
+This website was created for my music studio Stranger Aeons. It was created for my Code Louisville front end development final project.
+It consists of an index page, an about page, and a contact form. It utilizes html, css, and javascript in order to create a 
+responsive and interactive website.
 
-CSS features include:
-    -a navigation bar that collapses and changes orientation
-    dependant on whether the user's device is mobile, a tablet
-    ,or desktop. It can be opened and closed using the hamburger
-    icon. (located at the top of every page) 
-    -uses even and odd:nth child selector in order to provide variation between the 
-    different answers located on the about page.
+Media Querys:
+    There are two media queries utilized in the nav bar. With the default mobile-first design, the navigation links are hidden 
+    until the hamburger icon is clicked. However, when viewed on a tablet device (min width 768) the hamburger icon is moved to the 
+    bottom of the links using flexbox. When viewed on a larger screen (min width 1025) the navigation links are displayed by default 
+    to the right, and the hamburger icon is not visible. 
+
+CSS features:
+    -A navigation bar that collapses and changes orientation depending on whether the user's device is mobile, a tablet,
+    or desktop. It can be opened and closed using the hamburger icon. (located at the top of every page) 
+
 
 
 Javascript features include: 
-    -showing and hiding content on button click (when a question is clicked
-    on the about page the answer is shown)
-    -a contact form that validates email for correct format
-     and then displays that information back to the user 
-     (located on the contact page)
-    -created 3 variables which are then displayed back to the user
-    (happens when correct form with the correct information is submitted)
+    -A form that validates email for the correct format using a regular expression. If the user enters an invalid email, an alert
+    is displayed and the form does not submit. If the user inputs a valid email address, an alert is displayed that reads some of 
+    the input values back to them. (this is located on the booking page)
+    -If a button is pressed on the about page, hidden content is displayed. It can then be hidden again by pressing the same button
+    (about page) 
+    -3 variables set in javascript and then displayed on the page. When the contact form is successfully submited the bandData,
+    emailData, and demoData variables are displayed back to the user (booking page).
 
-
-html/ css classes used:
-    -navmenu :this class contains the entire nav bar
-    -navlogo :contains the font used as a logo
-    -navitem: link items in the nav bar
-    -homecont: this class contains the background image and
-              text on the home page
-    -aboutcont: this class is the container used for the
-                background image and questions on the about
-                page
-    -quest: this class contains the question button that shows
-             text when pressed
-    -ans:   this class contains the answer that is shown when
-            the quest button is pressed
-    -contactcont: contains everything but the nav bar on
-                on the booking page
-
-javascript variables:
-    -the quest variable contains the question button that is clicked on to displayed
-    the answer
-    -the ans variable contains the answer that can be toggled by clicking
-    -bandData is the value that is displayed depending on what the user
-    inputs under band name on the contact form
-    -emailData is the value displayed depending on what the user inputs
-    under email
-    
-
-    
-    
-    
-    
-    -
     
 
