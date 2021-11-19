@@ -23,18 +23,19 @@ a {
     text-decoration: none;
 }
 
-/* GENERAL NAV STYLES */
-
+/*            */
+/* NAV STYLES */
+/*            */
 
 /* HOVER OFF EFFECT */
 a,i {
     color: #fefaee;
     transition: ease-in .5s;
     font-size: 18px;
-    
+    text-decoration: none;
 }
 
-/* HAMBURGER ICON  */
+/* LINK HOVER ON */
 a:hover {
     color: #FDB927;
     letter-spacing: .5em;
@@ -42,14 +43,15 @@ a:hover {
     
 }
 
+/* HAMBURGER HOVER ON  */
 i:hover {
     color: #FDB927;
     transition: ease-in .5s;
 }
 
-.navlogo a:hover {
+/* .navlogo a:hover {
     text-decoration: none;
-}
+} */
 
 
 .navmenu li {
@@ -88,32 +90,33 @@ ul {
 }
 
 
-/* NAV TOGGLE */
-
 .navicon {
     cursor: pointer;
     color: #fefaee;
 }
 
+/*               */
+/* MEDIA QUERIES */
+/*               */
 
 /* TABLET NAVBAR */
 
-@media all and (min-width: 468px) {
+@media all and (min-width: 768px) {
     .navmenu {
         justify-content: center;
     }
     .navlogo {
         flex: 1;
     }
-    .navicon {
-        order: 2;
+    .navicon {        
+        order: 2;        
     }
 }
 
 
 /* PC NAVBAR */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1025px) {
     .navitem {
         display: block;
         width: auto;
@@ -127,52 +130,33 @@ ul {
     .navitem {
         order: 1;
     }
-    /* .button {
-        order: 2;
-    } */
     .navmenu li {
         padding: 15px 10px;
     }
 }
 
+/*           */
 /* HOME PAGE */
+/*           */
 
 .homecont {
     position: relative;
     min-height: 92vh;
-    background-image: url(reelbg.png);
+    background-image: url(../images/reelbg.png);
     background-position: center;
     background-size: cover;
-    -webkit-background-size: cover;
-    /*resizes background to window size for chromium based broswers */
-    -moz-backround-size: cover;
-    /*resizes background to window size on firefox*/
-    -ms-background-size: cover;
-    /*resizes background to window size on edge*/
     overflow: auto;
 }
 
 .homecont div {
+    font-size: 40px;
     color: #fefaee;
     min-width: 40vw;
     min-height: 25vh;
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-.homecont div:nth-child(1) {
-    /*p */
-    font-size: 20px;
-}
-
-.homecont div:nth-child(2) {
-    /* order: 0;
-    flex: 0 1 auto; */
     text-align: center;
-    font-size: 40px;
 }
 
 /*            */
@@ -196,13 +180,12 @@ ul {
 }
 
 .bg2 {
-    background-image: url(reelbg.png);
-    z-index: -1;
+    background-image: url(../images/reelbg.png);
 }
 
 .accordiancont {
     width: 100%;
-    padding: 50px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,10 +195,15 @@ ul {
 
 .quest {
     background-color: #fefaee;
+    font-family: 'Raleway', sans-serif;
     color: black;
+    font-weight: 1000;
+    border: 2.5px solid;
     border-radius: 20px;
     padding: 15px;
     margin: 10px;
+    width: 250px;
+    max-width:vw;
     cursor: pointer;
     transition: .5s ease-in;
 }
@@ -225,13 +213,19 @@ ul {
     transition: .5s ease-in;
 }
 .ans {
-    max-width: 60vw;
+    width: 400px;
+    max-width: 90vw;
     background-color: #fefaee;
+    border: 2px solid;
     border-radius: 15px;
     padding: 4px 10px;
     display: none;
 }
 
+/* Highlights active button. Class is created by Javascript */
+.highlight {
+    background-color: #FDB927;
+}
 
 /*               */
 /* BOOKING PAGE  */
@@ -254,8 +248,8 @@ ul {
 }
 
 .bg3 {
-    background-image: url(reelbg.png);
-    z-index: -1;
+    background-image: url(../images/reelbg1.png);
+    z-index: -1; /*Puts background behind form */
 }
 .contactform{
     width: 100%;
@@ -269,8 +263,9 @@ ul {
 .contactfield{
     font-size: 18px;
     margin: 5px;
+    width: 250px;
     padding: 5px;
-    border: 2px solid ;
+    border: 2.5px solid;
     border-radius: 20px;
     background-color:#fefaee;
     outline: none;     /* removes outline from active item */
@@ -279,7 +274,19 @@ ul {
 .contactbutton {
     padding: 5px;
     background-color:#fefaee;
-    border: 2px black;
+    border: 2.5px solid black;
     border-radius: 25px;
     font-size: 20px;
+    text-transform: uppercase;
+    transition: ease-in .5s;
+}
+
+.contactbutton:hover {
+    cursor: pointer;
+    background-color: #FDB927;
+    transition: ease-in .5s;
+}
+
+textarea {
+    font-family: 'Raleway', sans-serif;
 }
