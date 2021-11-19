@@ -1,4 +1,4 @@
-This website was created for my music studio Stranger Aeons. It was created for my Code Louisville front end development final project.
+This website was designed for my music studio Stranger Aeons. It was created for my Code Louisville front end development final project.
 It consists of an index page, an about page, and a contact form. It utilizes html, css, and javascript in order to create a 
 responsive and interactive website.
 
